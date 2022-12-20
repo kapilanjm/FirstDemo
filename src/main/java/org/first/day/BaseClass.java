@@ -110,36 +110,7 @@ public class BaseClass {
 		File dest=new File("C:\\Users\\ADMIN\\eclipse-workspace\\org.mvn.base.three\\Screenshot\\"+a+".png");
 		FileUtils.copyFile(screenshotAs, dest);
 	}
-	
-//	public static <Workbook> String readExcel(String fileName,String sh,int r,int c) throws IOException {
-//		File f=new File("C:\\Users\\ADMIN\\eclipse-workspace\\org.mvn.base.three\\src\\test\\resources\\Excel\\"+fileName+".xlsx");
-//		
-//		FileInputStream fd=new FileInputStream(f);
-//		Workbook wb=new XSSFWorkbook(fd);
-//		Sheet sheet = wb.getSheet(sh);
-//		Row row = sheet.getRow(r);
-//		Cell cell = row.getCell(c);
-//		int cellType = cell.getCellType();
-//		String Value=null;
-//		if(cellType==1) {
-//			 	Value = cell.getStringCellValue();
-//			
-//		}else {
-//			if(DateUtil.isCellDateFormatted(cell)) {
-//				Date dValue = cell.getDateCellValue();
-//				SimpleDateFormat sd=new SimpleDateFormat("dd-mm-yyyy");
-//				Value = sd.format(dValue);
-//			}else {
-//				double nValue = cell.getNumericCellValue();
-//				long ld=(long)nValue;
-//				Value = String.valueOf(ld);
-//			}
-//		}
-//		return Value;
-//	
-//	
-//	}
-	
+		
 	public static void screenshot(String FilePath) throws IOException {
 		long Time = System.currentTimeMillis();
 		TakesScreenshot tk=(TakesScreenshot)driver;
